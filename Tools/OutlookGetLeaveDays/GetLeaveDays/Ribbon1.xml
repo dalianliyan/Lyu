@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <!-- It is TabMail, not TabHome-->
+      <tab idMso="TabMail">
+        <group id="UtilsGroup" label="Utils">
+          <button id="btnCount" label="Count Leave Days"  
+             screentip="Text" onAction="OnClickButton"  
+             supertip="Count Leave Days in Outlook."/>         
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
