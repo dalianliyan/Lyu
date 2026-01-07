@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC363B6C-D200-4F62-B43E-4A69EF102A0E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarvellousWorks.PracticalPattern.Concept.Tests</RootNamespace>
+    <AssemblyName>Concept.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common">
+      <HintPath>..\..\bin\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Concept">
+      <HintPath>..\..\bin\Concept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributingFixture.cs" />
+    <Compile Include="ConfigurationBrokerFixture.cs" />
+    <Compile Include="CovarianceAndContravarianceFixture.cs" />
+    <Compile Include="DelegatingFixture.cs" />
+    <Compile Include="DependencyInjection\Attributer\AttributerInjectionTest.cs" />
+    <Compile Include="DependencyInjection\Constructor\ConstructorInjectionTest.cs" />
+    <Compile Include="DependencyInjection\Example1\ClientTest.cs" />
+    <Compile Include="DependencyInjection\Interfacer\InterfacerInjectionFixture.cs" />
+    <Compile Include="DependencyInjection\Interfacer\InterfacerInjectionTest.cs" />
+    <Compile Include="DependencyInjection\Setter\SetterInjectionFixture.cs" />
+    <Compile Include="DependencyInjection\Setter\SetterInjectionTest.cs" />
+    <Compile Include="DependencyInjection\WrongAttributer\AttributerInjectionTest.cs" />
+    <Compile Include="ErrorEntityFixture.cs" />
+    <Compile Include="Exercise\ConfigurationExerciseFixture.cs" />
+    <Compile Include="Exercise\DependencyInjectionExerciseFixture.cs" />
+    <Compile Include="Exercise\FluentInterfaceFixture.cs" />
+    <Compile Include="FluentInterfaceFixture.cs" />
+    <Compile Include="GenericsSupportFixture.cs" />
+    <Compile Include="IPerson.cs" />
+    <Compile Include="LinqFixture.cs" />
+    <Compile Include="NonGenericCollectionConvertFixture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RawGenericFactoryFixture.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SeasonFixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExerciseConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

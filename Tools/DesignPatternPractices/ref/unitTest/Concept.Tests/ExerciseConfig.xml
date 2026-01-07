@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <!--集合配置项-->
+  <users>
+    <user name="11" age="12" level="13"/>
+    <user name="21" age="22" level="23"/>
+    <user name="31" age="32" level="33"/>
+  </users>
+  <!--单元素配置项-->
+  <runtime name="1" age="2" level="3"/>
+</config>
